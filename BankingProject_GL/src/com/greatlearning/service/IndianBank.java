@@ -87,4 +87,5 @@ public class IndianBank implements InternetBanking{
 	public int checkbalance() {
 		return this.bankBalance;
 	}
+	
 }

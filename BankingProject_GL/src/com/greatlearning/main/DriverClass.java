@@ -78,7 +78,8 @@ public class DriverClass {
 				}
 				
 			} while (option !=0);//until user selects logout option (0) repeat this loop
-			
+			System.out.println("Logged out successfully");
+			userInput.close();
 		} else {
 			System.out.println("Credentials entered are invalid - Please check the bank account no and password");
 		}
