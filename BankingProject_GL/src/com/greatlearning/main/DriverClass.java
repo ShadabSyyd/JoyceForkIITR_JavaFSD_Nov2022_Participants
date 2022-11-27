@@ -46,11 +46,9 @@ public class DriverClass {
 				//use switch case to direct to the appropriate bank operation
 				switch(option) {
 					case 0:
-						option = 0;
 						break;
 						
 					case 1: {
-						option = 1;
 						boolean depositStatus = indianBank.deposit();
 						System.out.println("Deposit status is : " + ((depositStatus) ? "Success" : "Failed" ));
 						/*if(depositStatus) {
@@ -62,22 +60,19 @@ public class DriverClass {
 					break;
 					
 					case 2: {
-						option = 2;
 						boolean withdrawStatus = indianBank.withdraw();
 						System.out.println("Withdraw status is : " + ((withdrawStatus) ? "Success" : "Failed" ));
 					}
 					break;
 					
 					case 3: {
-						option = 3;
 						boolean transferStatus = indianBank.transfer();
 						System.out.println("Transfer status is : " + ((transferStatus) ? "Success" : "Failed" ));
 					}
 					
 					case 4: {
-						option = 4;
 						int bankBalance = indianBank.checkbalance();
-						System.out.println(bankBalance);
+						System.out.println("Bank balance is " + bankBalance);
 						
 					}
 				}
