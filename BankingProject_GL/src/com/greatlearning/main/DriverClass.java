@@ -17,7 +17,6 @@ public class DriverClass {
 		
 		InternetBanking indianBank = new IndianBank();
 		
-		//validate the credentials from the user input
 		//user input to be read
 		System.out.println("Welcome to Indian Bank ...");
 		
@@ -27,7 +26,7 @@ public class DriverClass {
 		System.out.println("Enter the password");
 		String password = userInput.nextLine();
 		
-		// and then validated
+		//validate the credentials from the user input
 		if(indianBankCustomer1.getBankAccountNo().equals(bankAccountNo) 
 				&& (indianBankCustomer1.getPassword().equals(password)) ) {
 			System.out.println("Logged in successfully");
