@@ -64,5 +64,6 @@ public class AppMain {
 		demoEmployee.setPassword(generatedPassword);
 		credentialsService.showCredentials(demoEmployee);
 		
+		userInput.close();
 	}
 }

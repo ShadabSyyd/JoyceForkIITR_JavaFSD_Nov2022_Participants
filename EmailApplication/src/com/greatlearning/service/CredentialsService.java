@@ -11,9 +11,7 @@ public class CredentialsService implements ICredentials {
 	
 	@Override
 	public String generateEmailAddress(String firstName, String lastName, String department) {
-		String atSymbol = "@";
-		String emailAddress = firstName+lastName+atSymbol+department+".gl.com";
-		//johnandrew@adm.gl.com
+		String emailAddress = firstName+lastName+"@"+department+".gl.com";
 		return emailAddress;
 	}
 	
@@ -34,12 +32,11 @@ public class CredentialsService implements ICredentials {
 		
 		for (int i=0; i < 8; i++) {
 
-			int boundValue = allValues.length();//70
-			int randomIndex = randomObj.nextInt(boundValue);//randomObj.nextValue(70) - between 0 and 70	
-			char randomChar = allValues.charAt(randomIndex);//allValues.charAt(3)			
-			password += String.valueOf(randomChar);//"D"
+			int boundValue = allValues.length();
+			int randomIndex = randomObj.nextInt(boundValue);	
+			char randomChar = allValues.charAt(randomIndex);		
+			password += String.valueOf(randomChar);
 		}	
-		//Dl0*w?#q
 		return password;
 	}
 

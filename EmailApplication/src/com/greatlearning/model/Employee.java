@@ -1,11 +1,7 @@
 package com.greatlearning.model;
 
 public class Employee {
-	//firstname
-	//lastname
-	//email
-	//password
-	//department
+	
 	private String firstName;
 	private String lastName;
 	private String email;
